@@ -57,7 +57,7 @@ const Editor = props => {
     React.createElement("div", { className: "row" },
     React.createElement("div", { className: "col-sm-8 offset-sm-2" },
     React.createElement(Header, { title: "# Editor" }),
-    React.createElement("textarea", { className: "jumbotron shadow-lg border border-primary rounded-0 p-2 w-100", rows: "10", id: "editor", onChange: props.onChange, value: props.text })))
+    React.createElement("textarea", { className: "text-white bg-dark shadow-lg border border-primary rounded-0 p-2 mb-5 w-100", rows: "10", id: "editor", onChange: props.onChange, value: props.text })))
   );
 };
 
@@ -66,7 +66,7 @@ const Preview = props => {
     React.createElement("div", { className: "row" },
     React.createElement("div", { className: "col-sm-10 offset-sm-1" },
     React.createElement(Header, { title: "< /> Preview" }),
-    React.createElement("div", { className: "jumbotron shadow-lg border border-primary rounded-0 p-2 w-100", id: "preview", dangerouslySetInnerHTML: { __html: marked(props.text) }, readOnly: true })))
+    React.createElement("div", { className: "bg-light shadow-lg border border-primary rounded-0 p-2 mb-5 w-100", id: "preview", dangerouslySetInnerHTML: { __html: marked(props.text) }, readOnly: true })))
   );
 };
 
