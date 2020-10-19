@@ -39,7 +39,7 @@ class Application extends React.Component {
   render() {
     return (
       React.createElement("div", null,
-      React.createElement("h1", { className: "text-primary display-3 text-center" }, "Markdown Previewer"),
+      React.createElement("h1", { className: "text-primary display-3 text-center" }, "Markdown Editor"),
       React.createElement(Editor, { onChange: this.handleChange, text: this.state.text }),
       React.createElement(Preview, { text: this.state.text }))
     );
